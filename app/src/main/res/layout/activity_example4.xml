@@ -45,4 +45,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF" />
+
+    <!-- RadioGroup chứa các RadioButton -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- RadioButton 1 - Red -->
+        <RadioButton
+            android:id="@+id/radioRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textColor="#000000"
+            android:button="@drawable/radio_button_selector" /> <!-- Sử dụng selector drawable -->
+
+        <!-- RadioButton 2 - Blue -->
+        <RadioButton
+            android:id="@+id/radioBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textColor="#000000"
+            android:button="@drawable/radio_button_selector" /> <!-- Sử dụng selector drawable -->
+
+        <!-- RadioButton 3 - Green -->
+        <RadioButton
+            android:id="@+id/radioGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textColor="#000000"
+            android:button="@drawable/radio_button_selector" /> <!-- Sử dụng selector drawable -->
+
+    </RadioGroup>
+
 </LinearLayout>

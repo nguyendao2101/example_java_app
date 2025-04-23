@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ExampleActivity3">
+    tools:context=".ExampleActivity7">
 
     <!-- AppBar (Không có padding) -->
     <LinearLayout
@@ -20,7 +20,7 @@
             android:id="@+id/appBarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nguyen_Ba_Dao_2155010065_Example3"
+            android:text="Nguyen_Ba_Dao_2155010065_Example5"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -28,47 +28,49 @@
 
     <!-- Body Content (có padding riêng) -->
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
 
         <LinearLayout
+            android:id="@+id/rootLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
 
-            <!-- TextView -->
+            <!-- TextView - initial text -->
+            <!-- TextView hiển thị vị trí X -->
             <TextView
-                android:id="@+id/youClickButton"
+                android:id="@+id/textLatitude"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:text="You Click Button"
+                android:layout_marginTop="50dp"
+                android:text="Latitude: "
                 android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <!-- EditText -->
-            <EditText
-                android:id="@+id/yourInput"
-                android:layout_width="match_parent"
+            <!-- TextView hiển thị vị trí Y -->
+            <TextView
+                android:id="@+id/textLongitude"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp"
-                android:layout_marginTop="50dp"
-                android:hint="Enter your full name"
-                android:inputType="text"
-                android:padding="12dp" />
+                android:layout_marginTop="10dp"
+                android:text="Longitude: "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-            <!-- Button -->
             <Button
                 android:id="@+id/clickMe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginRight="100dp"
                 android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
                 android:text="Click Me" />
         </LinearLayout>
     </ScrollView>
